@@ -1,32 +1,79 @@
 
 /*-------------------------------------------  general -------------------------------------------------------*/
 body{
-	font-size: 62.5%;
+	font-size: 68.9%;
 	font-family: helvetica, arial, sans-serif;
 	color:#545257; /*changes color of the whole text*/
 	margin-top: 0;
+	background:#42b3e5;
 }
+
+a:link {
+    color: #0384ce;
+}
+
+a:visited {
+    color: #42b3e5;
+}
+
+
+a:hover{
+	color:#42b3e5;
+		
+}
+
+a:active{
+	color:#c0c2ce;
+}
+
+a{
+text-decoration: none;
+}
+
+
+
+.description{ 
+	line-height: 130%;
+	font-size:18px;
+	margin:1.11%;
+	padding:2.22% 0 0;
+	text-align:left;
+}
+
+
 #wrapper{
+	background:#fff;
 	width:960px;
 	margin: 0 auto;
 	padding-left: 1%;
+	border-radius:10px;
 	padding-right: 1%;
-	-webkit-box-shadow: 0px 0px 5px #ececec;
-	-moz-box-shadow:    0px 0px 5px #ececec;
-	box-shadow:         0px 0px 5px #ececec;
+	-webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.5);
+	-moz-box-shadow:    0px 2px 5px 0px rgba(0,0,0,0.5);
+	box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.5);
 
 }
+
 /*-------------------------------------------  header -------------------------------------------------------*/
 
 header{
-	border-bottom: 1px solid #bbb8bf; /*changes color of border under project name*/
+	border-bottom: 1px dotted #1872FD; 
+	
+	/*changes color of border under project name*/
+	/*background:#1872FD;*/
+
 }
 h1{
-	margin-top: 0;
+	font-size:35px;
+	text-transform:uppercase;
+	color:#3156a3;
+	margin: 1.1%;
 	padding-top: 10px;
+	text-shadow: 2px 2px 3px #BCB7B7;
 }
 h2{
-	margin-top: 20px;
+	color:#E10C0F;
+	margin: 1.1%;
 }
 /*-------------------------------------------  table -------------------------------------------------------*/
 table{
@@ -34,6 +81,16 @@ table{
 	border-collapse: collapse;
 	width: 100%;
 }
+
+table tbody tr:hover td {
+	background: #fff;
+}
+/*table th, table td {
+	border: 1px solid #0055a5;
+	padding: 5px;
+}*/
+
+
 tr{
 	display: table-row;
 	border-color: inherit;
@@ -46,11 +103,12 @@ th{
 	padding: 1em 1em .5em;
 	font-weight: bold;
 	font-size: 120%;
-	color: #545257;  /*changes color of table hd text*/
-	background: #bbbcc0; /*changes color of table hd background*/
+	color: #fff;  /*changes color of table hd text*/
+	background: #0384ce; /*changes color of table hd background*/
+	text-transform:uppercase;
 }
 th:first-child{
-	/*border-right: 1px solid #6a7680;*/
+	border-right: 1px solid #fff;
 }
 td{
 	padding: 1em 1em;
@@ -63,7 +121,7 @@ td:first-child{
 .main{
 
 	overflow: auto;
-	/*border-bottom: 1px solid #bbb8bf;*/
+	border-bottom: 1px dotted #1872FD;
 }
 .main p{
 	width: 67.5%;
